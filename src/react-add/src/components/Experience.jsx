@@ -15,22 +15,26 @@ import { textVariant } from "../utils/motion";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
+    
       contentStyle={{
-        background: "#1d1836",
+        background: "#0A0024",
         color: "#fff",
+        border: "4px solid #00e5ff",
+        ":before": {
+          background: "#your-desired-color",
+        },
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
-      icon={
-        <div className="flex justify-center items-center w-full h-full">
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
-          />
+      date={
+        <div
+          style={{
+            color: "#003CFF", // Replace with the actual color value you want
+          }}
+        >
+          {experience.date}
         </div>
       }
+      iconStyle={{ background: experience.iconBg }}
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>

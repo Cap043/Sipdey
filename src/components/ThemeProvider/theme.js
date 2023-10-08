@@ -107,12 +107,13 @@ const tokensMobileSmall = {
 };
 
 // Tokens that change based on theme
+//change background here
 const dark = {
   themeId: 'dark',
-  rgbBackground: '17 17 17',
+  rgbBackground: '20 0 16',
   rgbBackgroundLight: '26 26 26',
   rgbPrimary: '0 229 255',
-  rgbAccent: '0 229 255',
+  rgbAccent: '191,0,255',
   rgbText: '255 255 255',
   rgbError: '255 55 102',
   colorTextTitle: 'rgb(var(--rgbText) / 1)',
@@ -122,8 +123,8 @@ const dark = {
 
 const light = {
   themeId: 'light',
-  rgbBackground: '242 242 242',
-  rgbBackgroundLight: '255 255 255',
+  rgbBackground: '230 238 252',
+  rgbBackgroundLight: '100 245 255',
   rgbPrimary: '0 0 0',
   rgbAccent: '0 229 255',
   rgbText: '0 0 0',

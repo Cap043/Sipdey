@@ -70,14 +70,14 @@ import styles from './SmartSparrow.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'Designing the future of education';
+const title = 'My Skills';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'Hey, I am Sworjjomoy Pathak, an App-Web developer with ample creativity and vast Knowledge about many Technologies related to it. Scroll through this page to see what I have got.';
 const roles = [
-  'Art Direction',
-  'UX and UI Design',
-  'Front End Development',
-  'Motion Design',
+  'Cross Platform Application Development',
+  'FrontEnd Web Development',
+  'Machine Learning Enthuciast',
+  'UI-UX Designer',
 ];
 
 export const SmartSparrow = () => {
@@ -108,7 +108,7 @@ export const SmartSparrow = () => {
           roles={roles}
         />
         <ProjectSection padding="top">
-          <ProjectSectionContent>
+          {/* <ProjectSectionContent>
             <ProjectImage
               raised
               key={themeId}
@@ -125,207 +125,11 @@ export const SmartSparrow = () => {
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
             />
-          </ProjectSectionContent>
+          </ProjectSectionContent> */}
         </ProjectSection>
-        <ProjectSection>
-          <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
-            <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
-            </ProjectSectionText>
-          </ProjectTextRow>
-        </ProjectSection>
-        <ProjectSection light={isDark}>
-          <ProjectSectionContent>
-            <Image
-              key={themeId}
-              srcSet={
-                isDark
-                  ? [imageSprComponentsDark, imageSprComponentsDarkLarge]
-                  : [imageSprComponentsLight, imageSprComponentsLightLarge]
-              }
-              placeholder={
-                isDark
-                  ? imageSprComponentsDarkPlaceholder
-                  : imageSprComponentsLightPlaceholder
-              }
-              alt={`A set of ${themeId} themed components for the aero design system`}
-              sizes="100vw"
-            />
-            <ProjectTextRow>
-              <SegmentedControl
-                currentIndex={themes.indexOf(themeId)}
-                onChange={handleThemeChange}
-              >
-                <SegmentedControlOption>Dark theme</SegmentedControlOption>
-                <SegmentedControlOption>Light theme</SegmentedControlOption>
-              </SegmentedControl>
-            </ProjectTextRow>
-            <ProjectTextRow>
-              <ProjectSectionHeading>The aero design system</ProjectSectionHeading>
-              <ProjectSectionText>
-                To streamline the design process across designers and engineers for such a
-                large project, it was important to lay the foundations with a strong,
-                flexible design system that could evolve during the product’s development
-                cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <Image
-              raised
-              key={themeId}
-              srcSet={
-                isDark
-                  ? [imageSprDesignSystemDark, imageSprDesignSystemDarkLarge]
-                  : [imageSprDesignSystemLight, imageSprDesignSystemLightLarge]
-              }
-              placeholder={
-                isDark
-                  ? imageSprDesignSystemDarkPlaceholder
-                  : imageSprDesignSystemLightPlaceholder
-              }
-              alt="The homepage of the aero design system docs website linking to principles and components."
-              sizes="100vw"
-            />
-            <ProjectTextRow>
-              <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
-              <ProjectSectionText>
-                A design system is useless if no one knows how to use it, so we put
-                together a comprehensive documentation website to cover principles, ux,
-                accessibility, and component guidelines for designers and engineers
-                working with the system.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
+        
         <ThemeProvider themeId="dark" data-invert>
-          <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={[imageSprBackgroundVolcanism, imageSprBackgroundVolcanismLarge]}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
-            }
-          >
-            <ProjectSectionColumns width="full">
-              <ProjectSectionContent width="full">
-                <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Motion design</ProjectSectionHeading>
-                  <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
-                  </ProjectSectionText>
-                </ProjectTextRow>
-              </ProjectSectionContent>
-              <Image
-                raised
-                className={styles.video}
-                srcSet={[
-                  { src: videoSprMotion, width: 1280 },
-                  { src: videoSprMotionLarge, width: 2560 },
-                ]}
-                placeholder={videoSprMotionPlaceholder}
-                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
-                sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
-              />
-            </ProjectSectionColumns>
-          </ProjectSection>
         </ThemeProvider>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
-              <ProjectSectionText>
-                A major part of solving for collaboration was being able to visualize the
-                learner experience in the editor. This was especially beneficial for
-                subject matter experts and instructors need to review and give feedback on
-                the higher level structure without having to dig through all of the
-                adaptivity scenarios screen by screen.
-              </ProjectSectionText>
-            </ProjectTextRow>
-            <Image
-              raised
-              key={themeId}
-              srcSet={
-                isDark
-                  ? [imageSprStoryboarderDark, imageSprStoryboarderDarkLarge]
-                  : [imageSprStoryboarderLight, imageSprStoryboarderLightLarge]
-              }
-              placeholder={
-                isDark
-                  ? imageSprStoryboarderDarkPlaceholder
-                  : imageSprStoryboarderLightPlaceholder
-              }
-              alt="A drag and drop storyboard style editor for creating an adaptive lesson."
-              sizes={`(max-width: ${media.mobile}px) 100vw, 80vw`}
-            />
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionColumns>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>
-                  An extensible plugin ecosystem usable by everyone
-                </ProjectSectionHeading>
-                <ProjectSectionText>
-                  The most powerful aspect of the platform is the ability to create custom
-                  plugins for any content, whether it be a degree, course, lesson, screen,
-                  or interactive component. Out of the box these can be made configurable
-                  with minimal effort from developers. Learning designers can then edit
-                  everything using a common configuration interface.
-                </ProjectSectionText>
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <div className={styles.sidebarImages}>
-              <Image
-                className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? [imageSprSchema2Dark, imageSprSchema2DarkLarge]
-                    : [imageSprSchema2Light, imageSprSchema2LightLarge]
-                }
-                placeholder={
-                  isDark
-                    ? imageSprSchema2DarkPlaceholder
-                    : imageSprSchema2LightPlaceholder
-                }
-                alt="Configuration options for a component."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />
-              <Image
-                className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? [imageSprSchema1Dark, imageSprSchema1DarkLarge]
-                    : [imageSprSchema1Light, imageSprSchema1LightLarge]
-                }
-                placeholder={
-                  isDark
-                    ? imageSprSchema1DarkPlaceholder
-                    : imageSprSchema1LightPlaceholder
-                }
-                alt="Configuration options for text."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />
-            </div>
-          </ProjectSectionColumns>
-        </ProjectSection>
         <ThemeProvider themeId="dark" data-invert>
           <Earth
             className={styles.earth}
@@ -338,49 +142,49 @@ export const SmartSparrow = () => {
               () => [
                 {
                   position: [0.54, 0.19, 0.18],
-                  text: 'Pacific ring of fire',
+                  text: 'React.JS',
                   hidden: true,
                 },
                 {
                   position: [0.47, -0.38, 0.04],
-                  text: 'Ruapehu',
+                  text: 'Next.JS',
                   hidden: true,
                 },
                 {
                   position: [0.22, 0.44, -0.35],
-                  text: 'St. Helens',
+                  text: 'Vue.JS',
                   hidden: true,
                 },
                 {
                   position: [0.16, -0.06, 0.58],
-                  text: 'Krakatoa',
+                  text: 'Vanilla.JS',
                   hidden: true,
                 },
                 {
                   position: [0.11, 0.2, -0.56],
-                  text: 'Parícutin',
+                  text: 'Three.JS',
                   hidden: true,
                 },
                 {
                   position: [0.52, 0.2, -0.23],
-                  text: 'Kīlauea',
+                  text: 'Flask',
                   hidden: true,
                 },
                 {
                   position: [-0.24, 0.75, 0.24],
-                  text: 'Mantle',
+                  text: 'Website Development',
                   delay: 800,
                   hidden: true,
                 },
                 {
                   position: [-0.24, 0.55, 0.24],
-                  text: 'Outer core',
+                  text: 'Application Development',
                   delay: 800,
                   hidden: true,
                 },
                 {
                   position: [-0.24, 0.35, 0.24],
-                  text: 'Inner core',
+                  text: 'Competitive Programming',
                   delay: 800,
                   hidden: true,
                 },
@@ -399,12 +203,11 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent>
                   <ProjectTextRow center>
                     <ProjectSectionHeading>
-                      Next-generation learning experiences
+                      What I like?
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      The flexibility of the product allowed for developers to create
-                      engaging interactive experiences as highly configurable plugins that
-                      could then be used and manipulated by learning designers.
+                    
+I am a competitive coder proficient in C, C++, Python, and Rust. My diverse language skills empower me to tackle a wide range of coding challenges, giving me a competitive edge in various programming competitions and fostering a deep understanding of algorithmic problem-solving.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -424,13 +227,11 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="end" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Bringing 3D into learning
+                      Application Developer
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      One really cool example is the 3D screen plugin. Learning designers
-                      can load any model into it and then configure camera positions to
-                      animate to for each section.
-                    </ProjectSectionText>
+                      Cross Platform Full-Stack Application Development using FLUTTER, DART, CORDOVA & MongoDB, FIREBASE as Database.
+                                          </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
               </ProjectSection>
@@ -452,12 +253,10 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="start" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Interactivity
+                      Web Developemnt
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      Learners can then be directed to specific parts of the model and
-                      shown labels. They’re also able to click and drag to orbit around
-                      and freely explore at any time.
+                      Web Development Using HTML-CSS-JS , Vanilla-JS, React-JS, NEXT-JS, Vue-JS & Three-JS. WebDev for ML Projects using Python, Flask & Django. Backend Using Node.js.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -468,30 +267,29 @@ export const SmartSparrow = () => {
               camera={[1.81, 0.51, 0.43]}
               meshes={['Atmosphere', 'EarthFull']}
               labels={[
-                'Pacific ring of fire',
-                'Ruapehu',
-                'St. Helens',
-                'Krakatoa',
-                'Parícutin',
-                'Kīlauea',
+                'React.JS',
+                'Next.JS',
+                'Vanilla.JS',
+                'Vue.JS',
+                'Three.JS',
+                'Flask',
               ]}
             />
             <EarthSection
               animations={['0:loop']}
               camera={[0.37, 1.02, 1.84]}
               meshes={['EarthPartial', 'Chunk']}
-              labels={['Mantle', 'Outer core', 'Inner core']}
+              labels={['Website Development', 'Application Development', 'Competitive Programming']}
             >
               <ProjectSection>
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="end" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Animation
+                      Technologies
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      Learning designers can pick an animation included in the model to
-                      play or loop for any section without having to use any complex
-                      animation tools.
+                      I'm proficient in GIT, AWS, GCP, Docker, NetLify, MS VSE, MS VSC, MS Azure. 
+                      I do Designing in Figma, Adobe Illustrator & Adobe Indesign.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
