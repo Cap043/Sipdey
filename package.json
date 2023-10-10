@@ -24,7 +24,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.2",
     "prettier": "^2.7.1",
-    "puppeteer": "^16.1.0",
+    "puppeteer": "^21.3.8",
     "reading-time": "^1.5.0",
     "rehype-img-size": "^1.0.1",
     "rehype-preset-minify": "^6.0.0",
@@ -39,6 +39,7 @@
   "dependencies": {
     "@react-three/drei": "^9.80.3",
     "@react-three/fiber": "^8.13.6",
+    "caniuse-lite": "^1.0.30001546",
     "framer-motion": "^7.10.3",
     "install": "^0.13.0",
     "mdx-bundler": "^9.0.1",

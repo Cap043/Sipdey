@@ -21,42 +21,42 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
 
-    emailjs
-      .send(
-        "service_r0jcplm",
-        "template_1t76uxq",
-        {
-          form_name: form.name,
-          to_name: "Liron",
-          from_email: form.email,
-          to_email: "contact@mail.com",
-          message: form.message,
-        },
-        "Jqq9AvwIuSjoMiA5c"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+  //   emailjs
+  //     .send(
+  //       "service_r0jcplm",
+  //       "template_1t76uxq",
+  //       {
+  //         form_name: form.name,
+  //         to_name: "Liron",
+  //         from_email: form.email,
+  //         to_email: "contact@mail.com",
+  //         message: form.message,
+  //       },
+  //       "Jqq9AvwIuSjoMiA5c"
+  //     )
+  //     .then(
+  //       () => {
+  //         setLoading(false);
+  //         alert("Thank you. I will get back to you as soon as possible.");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
+  //         setForm({
+  //           name: "",
+  //           email: "",
+  //           message: "",
+  //         });
+  //       },
+  //       (error) => {
+  //         setLoading(false);
 
-          console.log(error);
-          alert("Something went wrong.");
-        }
-      );
-  };
+  //         console.log(error);
+  //         alert("Something went wrong.");
+  //       }
+  //     );
+  // };
 
   return (
     <div

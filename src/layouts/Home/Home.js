@@ -4,8 +4,8 @@ import gamestackTexture2 from 'assets/chatgpt.png';
 import gamestackTextureLarge from 'assets/chatgpt2.png';
 import gamestackTexturePlaceholder from 'assets/chatgpt2.png';
 import gamestackTexture from 'assets/chatgpt2.png';
-import oldAgePlaceholder from 'assets/old1.jpeg'
-import oldAgePlaceholder2 from 'assets/old2.jpeg'
+import oldAgePlaceholder from 'assets/old1.jpeg';
+import oldAgePlaceholder2 from 'assets/old2.jpeg';
 import sliceTextureLarge from 'assets/buszup.png';
 import sliceTexturePlaceholder from 'assets/buszup.png';
 import sliceTexture from 'assets/slice-app.jpg';

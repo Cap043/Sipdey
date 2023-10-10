@@ -25,9 +25,9 @@ Since then I've used this website as a playground for experimenting with new tec
 
 With Create React App I was using a somewhat janky and unmaintained package to prerender the site as static HTML in Puppeteer. This worked okay for the most part, but I wanted a more robust solution for posting articles (like this one you're reading) using MDX. I had a half baked version of this lying dormant in the repo, but it never felt good enough to publish. I looked at a few options like Gatsby, Vite, and Parcel, and Remix, but Next.js stood out as the most suited to my needs.
 
-- The site is now based on Next.js. Is a much better fit than Create React App. For now I'm just using it to create a static export, but maybe I'll add some server rendered stuff in the future.
-- Styling is now vanilla CSS with postcss to add support for the future native CSS nesting and custom media queries features. I'm using CSS modules instead of BEM syntax to avoid style conflicts.
-- For generating pages from `.mdx` files, I'm using Kent C Dodds' [mdx-bundler](https://github.com/kentcdodds/mdx-bundler). In combination with Next.js it makes generating pages from `.mdx` files really quick and simple.
+- The site is now based on Next.js. Is a much better fit than Create React App. For now I am just using it to create a static export, but maybe I'll add some server rendered stuff in the future.
+- Styling is now vanilla CSS with postcss to add support for the future native CSS nesting and custom media queries features. I am using CSS modules instead of BEM syntax to avoid style conflicts.
+- For generating pages from `.mdx` files, I am using Kent C Dodds' [mdx-bundler](https://github.com/kentcdodds/mdx-bundler). In combination with Next.js it makes generating pages from `.mdx` files really quick and simple.
 - For animation I've moved from Tween.js and React Transition Group to just Framer Motion.
 - 3D effects are still all using Three.js, but I've added `three-stdlib` as a better maintained replacement for modules from Three's examples.
 

@@ -7,7 +7,6 @@ import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
 import { Image } from 'components/Image';
-import { Link } from 'components/Link';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
@@ -21,10 +20,10 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-  I'm Sworjjomoy Pathak, a third-year BTech student with expertise in frontend web development and full-stack Android application development. I'm well-versed in technologies such as React, Flutter, Dart, and Python. My passion lies in creating innovative and user-friendly solutions, and I'm always eager to contribute my skills to exciting projects.
+  I am Sworjjomoy Pathak, a third-year BTech student with expertise in frontend web development and full-stack Android application development. I am well-versed in technologies such as React, Flutter, Dart, and Python. My passion lies in creating innovative and user-friendly solutions, and I am always eager to contribute my skills to exciting projects.
 </Text>
 <Text className={styles.description} data-visible={visible} size="l" as="p">
-  In my free time, I stay up to date with the latest tech trends, constantly learning and exploring new opportunities. Whether it's web development, mobile apps, or machine learning, I'm open to challenges and collaborations. Feel free to reach out if you have exciting projects or opportunities in mind.
+  In my free time, I stay up to date with the latest tech trends, constantly learning and exploring new opportunities. Whether it is web development, mobile apps, or machine learning, I am open to challenges and collaborations. Feel free to reach out if you have exciting projects or opportunities in mind.
 </Text>
 
   </Fragment>

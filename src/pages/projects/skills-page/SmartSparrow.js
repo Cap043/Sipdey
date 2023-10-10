@@ -288,7 +288,7 @@ I am a competitive coder proficient in C, C++, Python, and Rust. My diverse lang
                       Technologies
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      I'm proficient in GIT, AWS, GCP, Docker, NetLify, MS VSE, MS VSC, MS Azure. 
+                      I am proficient in GIT, AWS, GCP, Docker, NetLify, MS VSE, MS VSC, MS Azure. 
                       I do Designing in Figma, Adobe Illustrator & Adobe Indesign.
                     </ProjectSectionText>
                   </ProjectTextRow>
