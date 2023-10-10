@@ -8,8 +8,8 @@ export const navLinks = [
     pathname: '/#details',
   },
   {
-    label: 'Articles',
-    pathname: '/articles',
+    label: 'Skills',
+    pathname: "/projects/skills-page",
   },
   {
     label: 'Contact',
@@ -19,18 +19,18 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
+    label: 'Linked-In',
+    url: 'https://www.linkedin.com/in/sworjjomoy-pathak-054410221',
     icon: 'twitter',
   },
   {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
+    label: 'Whatsapp',
+    url: 'https://api.whatsapp.com/send?phone=917865090443&text=Hi%20Sworjjomoy',
     icon: 'figma',
   },
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/Cap043',
     icon: 'github',
   },
 ];

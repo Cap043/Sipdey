@@ -110,7 +110,7 @@ const tokensMobileSmall = {
 //change background here
 const dark = {
   themeId: 'dark',
-  rgbBackground: '20 0 16',
+  rgbBackground: '14 0 20',
   rgbBackgroundLight: '26 26 26',
   rgbPrimary: '0 229 255',
   rgbAccent: '191,0,255',

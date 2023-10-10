@@ -1,5 +1,5 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/profile-large.jpg';
+import profileImgLarge from 'assets/profile.jpg';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import profileImg from 'assets/profile.jpg';
 import { Button } from 'components/Button';
@@ -21,17 +21,12 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
-    </Text>
+  I'm Sworjjomoy Pathak, a third-year BTech student with expertise in frontend web development and full-stack Android application development. I'm well-versed in technologies such as React, Flutter, Dart, and Python. My passion lies in creating innovative and user-friendly solutions, and I'm always eager to contribute my skills to exciting projects.
+</Text>
+<Text className={styles.description} data-visible={visible} size="l" as="p">
+  In my free time, I stay up to date with the latest tech trends, constantly learning and exploring new opportunities. Whether it's web development, mobile apps, or machine learning, I'm open to challenges and collaborations. Feel free to reach out if you have exciting projects or opportunities in mind.
+</Text>
+
   </Fragment>
 );
 

@@ -19,7 +19,7 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         background: "#0A0024",
         color: "#fff",
-        border: "4px solid #00e5ff",
+        border: "4px solid #000000",
         ":before": {
           background: "#your-desired-color",
         },
@@ -28,7 +28,9 @@ const ExperienceCard = ({ experience }) => {
       date={
         <div
           style={{
-            color: "#003CFF", // Replace with the actual color value you want
+            fontSize: '20px',
+            fontWeight: "bolder",
+            color: "#707070", // Replace with the actual color value you want
           }}
         >
           {experience.date}

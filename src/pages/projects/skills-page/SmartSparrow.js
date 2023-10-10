@@ -104,7 +104,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://drive.google.com/file/d/1-1U4Fhv5g4Or_T7X_bKuZqj80Xd3iVYo/view?usp=drivesdk"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -310,7 +310,7 @@ I am a competitive coder proficient in C, C++, Python, and Rust. My diverse lang
               <ProjectSectionText>
                 Ultimately the project was successful after Smart Sparrow and the aero
                 platform were{' '}
-                <Link href="https://www.prnewswire.com/news-releases/pearson-acquires-interactive-learning-technology-from-smart-sparrow-300987673.html">
+                <Link href="https://www.prnewswire.com/news-releases/pearson-acquires-interactive-learning-technology-from-skills-page-300987673.html">
                   acquired by Pearson in 2020
                 </Link>{' '}
                 to become a foundation for their next generation learning platform.
